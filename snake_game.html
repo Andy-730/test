@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Snake Game</title>
+  </head>
+  
+  <body>
+    
+
+    <div id="score">0</div>
+    <div style="text-align: center;"><button onclick="start();">開始</button></div>
+    <div style="text-align: center;"><button onclick="restart();">重新開始</button></div>
+    <div style="text-align: center;"><button onclick="start();">加速</button></div>
+    <div style="text-align: center;"><button onclick="start();">減速</button></div>
+    <div><h1>遊戲說明:</h1></div>
+    <div><h2>使用上下左右鍵讓貪吃蛇能吃到綠色食物方塊</h2></div>
+    <div><h3>準備好即可按開始來開始遊戲</h3></div>
+    <div><h4>若你的貪吃蛇死亡，按下重新開始鍵即可</h4></div>
+
+
+
+
+    <canvas id="snakeboard" width="400" height="400"></canvas>
+
+    <style>
+
+body {
+  background-image: url('https://imgur.com/eybHSel.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+      #snakeboard {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #score {
+        text-align: center;
+        font-size: 140px;
+      }
+      
+      
+      
+
+    </style>
+
+    <script src="snake_game.js"></script>
+
+    
+    
+    
+  </body>
+</html>
